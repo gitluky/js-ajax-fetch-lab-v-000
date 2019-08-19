@@ -12,7 +12,7 @@ function forkRepo() {
   //use fetch to fork it!
   fetch(`/repos/${repo}/forks`, {
     headers: {
-      Authorization: `token ` + getToken();
+      Authorization: `token ` + getToken()
     }
   })
   .then(res => res.json())
