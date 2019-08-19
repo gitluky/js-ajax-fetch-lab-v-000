@@ -10,7 +10,7 @@ function getToken() {
 function forkRepo() {
   const repo = 'learn-co-curriculum/js-ajax-fetch-lab';
   //use fetch to fork it!
-  fetch(repo, {
+  fetch(`/repos/${repo}/forks`, {
     headers: {
       Authorization: `token ` + getToken();
     }
